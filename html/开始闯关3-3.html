@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>开始闯关3/3</title>
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg">
+	<div class="seed-top bg-blue">
+		<ul class="display-box people">
+			<li>
+				<h1>2012</h1>
+				<p>本书挑战成功者</p>
+			</li>
+			<li>
+				<h1>2897</h1>
+				<p>本书参与总人数</p>
+			</li>
+		</ul>
+	</div>
+	<div class="seed-bottom">
+		<section class="seed-publish">
+			<h1>今日阅读任务：第11-16章</h1>
+			<p>阅读任务每晚12点更新，完成当天阅读任务即可闯关，连续3天通关者视为挑战成功！</p>
+		</section>
+		<section class="seed-con">
+			<ul class="display-box seed-tab" id="seed-tab">
+				<li><span class="seedBlueOn">最新</span></li>
+				<li><span>热门</span></li>
+			</ul>
+			<div class="seed-lists" id="seed-lists">
+				<div class="seed-list">
+					<div class="padd15">
+						<div class="reader-title">
+							<span class="fr">6:30PM</span>
+							<i class="reader"><img src="../imgs/reader.jpg" alt=""></i>
+							<h1>Marine Legrand</h1>
+						</div>
+						<h1 class="topic"># 你觉得最后安利放弃他的女儿值得吗？ #</h1>
+						<p class="topic-con">Vdy jsdsdk sdjskldfd fdfkdflkfkf jsfdfkjldfkd wuiwio</p>
+					</div>
+				</div>
+				<div class="seed-list">
+					<div class="padd15">
+						<div class="reader-title">
+							<span class="fr">6:30PM</span>
+							<i class="reader"><img src="../imgs/reader.jpg" alt=""></i>
+							<h1>热门</h1>
+						</div>
+						<h1 class="topic"># 你觉得最后安利放弃他的女儿值得吗？ #</h1>
+						<p class="topic-con">Vdy jsdsdk sdjskldfd fdfkdflkfkf jsfdfkjldfkd wuiwio</p>
+					</div>
+				</div>
+			</div>
+			<p class="result"><a class="result-btn bg-yellow">开始闯关3/3</a></p>
+		</section>
+	</div>
+	
+	<script src="../js/jquery-2.0.0.min.js"></script>
+	<script>
+		$("#seed-tab").on('click','li',cur_con);
+		function cur_con(){
+		    var idx=$(this).index(),
+		        items = $('#seed-lists').find('.seed-list');
+		    $("#seed-tab span").removeClass("seedBlueOn");   
+		    $(this).find('span').addClass("seedBlueOn");
+		    items.hide();
+		    items.eq(idx).show();
+		}
+	</script>
+</body>
+</html>
