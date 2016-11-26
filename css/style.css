@@ -86,6 +86,8 @@ html,body{width: 100%;}
 .achievement p{font-size: 12px;}
 .achievement a{font-size: 12px;display: inline-block;width:86%;height: 20px;line-height: 20px;background-color: #ff557c;color: #fff;text-align: center;margin:12px auto 9px;border-radius: 20px;box-shadow:2px 9px 20px #ffd2dd;}
 .achievement h3{font-size: 12px;color: #bdbcbc;}
+.achievement .small-pic {width:60px; display: inline-block; -webkit-border-radius:100%; -moz-border-radius:100%; border-radius:100%;margin:5px 0 20px 0;}
+.achievement .small-pic img{width:100%;height:auto;}
 .icon-box{width: 34%;margin: 0 auto;}
 .icon-box img{width: 26px;height: 26px;}
 .icon-box span{display: inline-block;width: 2px;height: 21px;background-color: #979797;vertical-align:-7px;}
@@ -190,6 +192,8 @@ html,body{width: 100%;}
 .mt20 {margin-top:20px;}
 .pt20 {padding-top:20px;}
 .pt25 {padding-top:25px;}
+.pb5 {padding-bottom:5px;}
+.pb10 {padding-bottom:10px;}
 .clearfox {clear:both;}
 
  /*tip弹出*/
